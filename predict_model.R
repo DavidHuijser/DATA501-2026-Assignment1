@@ -7,7 +7,5 @@ predict_model_A <- function(x, par) {
   A <- par[4]
   B <- par[5]
   freq <- par[6] 
-
-  
   a*x**2 + b*x+c +  A*sin(2*freq*pi*x) + B*cos(2*freq*pi*x) 
 }
