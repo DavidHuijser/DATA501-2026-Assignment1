@@ -2,7 +2,7 @@ fit_nonlinear <- function(x, y, start_par) {
   
   n <- start_par$n
   model_type <- start_par$model_type 
-  
+  print(paste("Model type", model_type))
   if (model_type == 'A')
   {
       init_par <- c(start_par$a, start_par$b, start_par$c, start_par$A, start_par$B, start_par$freq)
